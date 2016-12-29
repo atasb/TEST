@@ -4,7 +4,7 @@
   <orgomg.cwm.resource.record:RecordFile xmi:id="_eCasIM3UEeaFoY2LKCiWSw" name="default" dataManager="_eCaFEM3UEeaFoY2LKCiWSw">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_eCasIc3UEeaFoY2LKCiWSw" id="_KtzA0M3UEeaFoY2LKCiWSw" label="metadata">
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eCasIs3UEeaFoY2LKCiWSw" label="Name" length="15" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eCasI83UEeaFoY2LKCiWSw" label="Class" length="4" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eCasI83UEeaFoY2LKCiWSw" label="Klasse" length="4" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eCasJM3UEeaFoY2LKCiWSw" label="Dorm" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eCasJc3UEeaFoY2LKCiWSw" label="Room" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eCasJs3UEeaFoY2LKCiWSw" label="GPA" length="4" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
