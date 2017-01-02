@@ -252,22 +252,28 @@
     <elementParameter field="COLUMN_LIST" name="INDEX_VALUE" value="Name" show="false"/>
     <elementParameter field="TABLE" name="VALUES" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="Name"/>
-      <elementValue elementRef="AUTO_INDEXED" value=""/>
-      <elementValue elementRef="INDEX_NAMES" value=""/>
+      <elementValue elementRef="AUTO_INDEXED" value="false"/>
+      <elementValue elementRef="INDEX_NAMES" value="&quot;Name&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Klasse"/>
-      <elementValue elementRef="AUTO_INDEXED" value=""/>
+      <elementValue elementRef="AUTO_INDEXED" value="false"/>
       <elementValue elementRef="INDEX_NAMES" value=""/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Dorm"/>
-      <elementValue elementRef="AUTO_INDEXED" value=""/>
+      <elementValue elementRef="AUTO_INDEXED" value="false"/>
       <elementValue elementRef="INDEX_NAMES" value=""/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Room"/>
-      <elementValue elementRef="AUTO_INDEXED" value=""/>
+      <elementValue elementRef="AUTO_INDEXED" value="false"/>
       <elementValue elementRef="INDEX_NAMES" value=""/>
       <elementValue elementRef="SCHEMA_COLUMN" value="GPA"/>
-      <elementValue elementRef="AUTO_INDEXED" value=""/>
+      <elementValue elementRef="AUTO_INDEXED" value="false"/>
       <elementValue elementRef="INDEX_NAMES" value=""/>
     </elementParameter>
-    <elementParameter field="TABLE" name="INDEXES" show="false"/>
+    <elementParameter field="TABLE" name="INDEXES" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Name"/>
+      <elementValue elementRef="INDEX_NAME" value="&quot;Name&quot;"/>
+      <elementValue elementRef="KEY" value="&quot;Name&quot;"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="UNIQUE" value="false"/>
+    </elementParameter>
     <elementParameter field="TABLE" name="RELATIONSHIPS" show="false"/>
     <elementParameter field="TEXT" name="COMMIT_EVERY" value="&quot;30000&quot;"/>
     <elementParameter field="CHECK" name="BATCH_IMPORT" value="false"/>
@@ -292,6 +298,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tNeo4jOutput_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Dorm"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
   </connection>
