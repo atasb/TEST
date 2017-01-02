@@ -116,7 +116,7 @@
     <elementParameter field="CHECK" name="SET_USERNAME" value="false" show="false"/>
     <elementParameter field="TEXT" name="USERNAME" value="&quot;talend&quot;"/>
     <elementParameter field="PASSWORD" name="PASSWORD" value="7s6v49ZcklfgvLhdBCEhjQ=="/>
-    <elementParameter field="TEXT" name="LABEL" value="test"/>
+    <elementParameter field="TEXT" name="LABEL" value="Neo4jConnection"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="224">
@@ -237,6 +237,7 @@
     <elementParameter field="TEXT" name="PROPERTY_MAPPED_MEMORY" value="&quot;50M&quot;" show="false"/>
     <elementParameter field="TEXT" name="STRINGS_MAPPED_MEMORY" value="&quot;100M&quot;" show="false"/>
     <elementParameter field="TEXT" name="ARRAYS_MAPPED_MEMORY" value="&quot;0M&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Neo4jOutput"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tNeo4jOutput_1">
       <column comment="" key="false" length="8" name="_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
