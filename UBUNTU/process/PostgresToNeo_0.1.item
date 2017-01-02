@@ -209,7 +209,7 @@
       <elementValue elementRef="INDEX_NAMES" value=""/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Family_"/>
       <elementValue elementRef="AUTO_INDEXED" value="false"/>
-      <elementValue elementRef="INDEX_NAMES" value="&quot;family&quot;,&quot;family&quot;"/>
+      <elementValue elementRef="INDEX_NAMES" value="&quot;Family_&quot;,&quot;Family_&quot;"/>
     </elementParameter>
     <elementParameter field="TABLE" name="INDEXES" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="_Name"/>
@@ -218,8 +218,8 @@
       <elementValue elementRef="VALUE" value=""/>
       <elementValue elementRef="UNIQUE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Family_"/>
-      <elementValue elementRef="INDEX_NAME" value="&quot;family&quot;"/>
-      <elementValue elementRef="KEY" value="&quot;familiy_name&quot;"/>
+      <elementValue elementRef="INDEX_NAME" value="&quot;Family_&quot;"/>
+      <elementValue elementRef="KEY" value="&quot;family_name&quot;"/>
       <elementValue elementRef="VALUE" value=""/>
       <elementValue elementRef="UNIQUE" value="false"/>
     </elementParameter>
@@ -227,7 +227,7 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="Family_"/>
       <elementValue elementRef="TYPE" value="&quot;Spouse&quot;"/>
       <elementValue elementRef="DIRECTION" value="Outgoing"/>
-      <elementValue elementRef="INDEX_NAME" value="&quot;family&quot;"/>
+      <elementValue elementRef="INDEX_NAME" value="&quot;Family_&quot;"/>
       <elementValue elementRef="KEY" value="&quot;family_name&quot;"/>
       <elementValue elementRef="VALUE" value=""/>
     </elementParameter>
