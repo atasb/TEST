@@ -219,68 +219,6 @@
       <column comment="" key="false" length="4" name="GPA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_Float" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tNeo4jOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="224">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tNeo4jOutput_1" show="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tNeo4jConnection_1"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="NEO4J_2_3_X" show="false"/>
-    <elementParameter field="CHECK" name="REMOTE_SERVER" value="false" show="false"/>
-    <elementParameter field="DIRECTORY" name="DATABASE_PATH" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="SERVER_URL" value="&quot;http://localhost:7474/db/data&quot;" show="false"/>
-    <elementParameter field="CHECK" name="SHUTDOWN_DB" value="false"/>
-    <elementParameter field="CHECK" name="SET_USERNAME" value="false" show="false"/>
-    <elementParameter field="TEXT" name="USERNAME" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="" show="false"/>
-    <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="CHECK" name="USE_LABEL" value="false"/>
-    <elementParameter field="TEXT" name="LABEL_NAME" value="&quot;Label&quot;" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
-    <elementParameter field="TEXT" name="INDEX_NAME" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="INDEX_KEY" value="&quot;&quot;" show="false"/>
-    <elementParameter field="COLUMN_LIST" name="INDEX_VALUE" value="Name" show="false"/>
-    <elementParameter field="TABLE" name="VALUES" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Name"/>
-      <elementValue elementRef="AUTO_INDEXED" value="false"/>
-      <elementValue elementRef="INDEX_NAMES" value="&quot;Name&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Klasse"/>
-      <elementValue elementRef="AUTO_INDEXED" value="false"/>
-      <elementValue elementRef="INDEX_NAMES" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Dorm"/>
-      <elementValue elementRef="AUTO_INDEXED" value="false"/>
-      <elementValue elementRef="INDEX_NAMES" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Room"/>
-      <elementValue elementRef="AUTO_INDEXED" value="false"/>
-      <elementValue elementRef="INDEX_NAMES" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="GPA"/>
-      <elementValue elementRef="AUTO_INDEXED" value="false"/>
-      <elementValue elementRef="INDEX_NAMES" value=""/>
-    </elementParameter>
-    <elementParameter field="TABLE" name="INDEXES" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Name"/>
-      <elementValue elementRef="INDEX_NAME" value="&quot;Name&quot;"/>
-      <elementValue elementRef="KEY" value="&quot;Name&quot;"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="UNIQUE" value="false"/>
-    </elementParameter>
-    <elementParameter field="TABLE" name="RELATIONSHIPS" show="false"/>
-    <elementParameter field="TEXT" name="COMMIT_EVERY" value="&quot;30000&quot;"/>
-    <elementParameter field="CHECK" name="BATCH_IMPORT" value="false"/>
-    <elementParameter field="LABEL" name="BATCH_INFORMATION_1" value="Be careful with batch importer. For more informations refer&#xA;&#x9;&#x9;&#x9;&#x9;to documentation.&#xA;&#x9;&#x9;&#x9;"/>
-    <elementParameter field="LABEL" name="BATCH_INFORMATION_2" value="Never stop job during the importation. Some data files could&#xA;&#x9;&#x9;&#x9;&#x9;be corrupted. MAKE BACKUP !!!&#xA;&#x9;&#x9;&#x9;"/>
-    <elementParameter field="TEXT" name="NODE_MAPPED_MEMORY" value="&quot;90M&quot;" show="false"/>
-    <elementParameter field="TEXT" name="RELATIONSHIP_MAPPED_MEMORY" value="&quot;300M&quot;" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTY_MAPPED_MEMORY" value="&quot;50M&quot;" show="false"/>
-    <elementParameter field="TEXT" name="STRINGS_MAPPED_MEMORY" value="&quot;100M&quot;" show="false"/>
-    <elementParameter field="TEXT" name="ARRAYS_MAPPED_MEMORY" value="&quot;0M&quot;" show="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="metadata" name="tNeo4jOutput_1">
-      <column comment="" key="false" length="15" name="Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="Klasse" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="14" name="Dorm" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="Room" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="GPA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_Float" usefulColumn="true"/>
-    </metadata>
-  </node>
   <node componentName="tNeo4jConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tNeo4jConnection_1" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
@@ -299,15 +237,6 @@
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tLogRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tNeo4jOutput_1">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="Dorm"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
