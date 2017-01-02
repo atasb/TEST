@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_eTDDsND2Eeaz4JcVhkQTuw" name="sample" dataPackage="_eTDDsdD2Eeaz4JcVhkQTuw" Server="Localhost 127.0.0.1" FilePath="C:/Users/batas/Desktop/sample.csv" Encoding="US-ASCII" FieldSeparatorValue="&quot;;&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_eTDDsdD2Eeaz4JcVhkQTuw" name="default" dataManager="_eTDDsND2Eeaz4JcVhkQTuw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_eTDDstD2Eeaz4JcVhkQTuw" id="_UAbkYND2Eeaz4JcVhkQTuw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eTDDs9D2Eeaz4JcVhkQTuw" label="_employeeID" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eTDDtND2Eeaz4JcVhkQTuw" label="employeeName" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eTDDtdD2Eeaz4JcVhkQTuw" label="age" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eTDDttD2Eeaz4JcVhkQTuw" label="hireDate" length="10" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eTDDt9D2Eeaz4JcVhkQTuw" label="salary" length="8" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eTDDuND2Eeaz4JcVhkQTuw" label="managerID_" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
