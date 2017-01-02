@@ -191,28 +191,46 @@
     <elementParameter field="TEXT" name="USERNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="PASSWORD" name="PASSWORD" value="" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="CHECK" name="USE_LABEL" value="false"/>
-    <elementParameter field="TEXT" name="LABEL_NAME" value="&quot;Label&quot;" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
-    <elementParameter field="TEXT" name="INDEX_NAME" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="INDEX_KEY" value="&quot;&quot;" show="false"/>
-    <elementParameter field="COLUMN_LIST" name="INDEX_VALUE" value="_Name" show="false"/>
+    <elementParameter field="CHECK" name="USE_LABEL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL_NAME" value="&quot;Families&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT_OR_UPDATE"/>
+    <elementParameter field="TEXT" name="INDEX_NAME" value="&quot;first_name&quot;"/>
+    <elementParameter field="TEXT" name="INDEX_KEY" value="&quot;first_name&quot;"/>
+    <elementParameter field="COLUMN_LIST" name="INDEX_VALUE" value="_Name"/>
     <elementParameter field="TABLE" name="VALUES" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="_Name"/>
-      <elementValue elementRef="AUTO_INDEXED" value=""/>
-      <elementValue elementRef="INDEX_NAMES" value=""/>
+      <elementValue elementRef="AUTO_INDEXED" value="false"/>
+      <elementValue elementRef="INDEX_NAMES" value="&quot;first_name&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Gender"/>
-      <elementValue elementRef="AUTO_INDEXED" value=""/>
+      <elementValue elementRef="AUTO_INDEXED" value="false"/>
       <elementValue elementRef="INDEX_NAMES" value=""/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Age"/>
-      <elementValue elementRef="AUTO_INDEXED" value=""/>
+      <elementValue elementRef="AUTO_INDEXED" value="false"/>
       <elementValue elementRef="INDEX_NAMES" value=""/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Family_"/>
-      <elementValue elementRef="AUTO_INDEXED" value=""/>
-      <elementValue elementRef="INDEX_NAMES" value=""/>
+      <elementValue elementRef="AUTO_INDEXED" value="false"/>
+      <elementValue elementRef="INDEX_NAMES" value="&quot;family&quot;,&quot;family&quot;"/>
     </elementParameter>
-    <elementParameter field="TABLE" name="INDEXES" show="false"/>
-    <elementParameter field="TABLE" name="RELATIONSHIPS" show="false"/>
+    <elementParameter field="TABLE" name="INDEXES" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Name"/>
+      <elementValue elementRef="INDEX_NAME" value="&quot;first_name&quot;"/>
+      <elementValue elementRef="KEY" value="&quot;first_name&quot;"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="UNIQUE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Family_"/>
+      <elementValue elementRef="INDEX_NAME" value="&quot;family&quot;"/>
+      <elementValue elementRef="KEY" value="&quot;familiy_name&quot;"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="UNIQUE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="RELATIONSHIPS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Family_"/>
+      <elementValue elementRef="TYPE" value="&quot;Spouse&quot;"/>
+      <elementValue elementRef="DIRECTION" value="Outgoing"/>
+      <elementValue elementRef="INDEX_NAME" value="&quot;family&quot;"/>
+      <elementValue elementRef="KEY" value="&quot;family_name&quot;"/>
+      <elementValue elementRef="VALUE" value=""/>
+    </elementParameter>
     <elementParameter field="TEXT" name="COMMIT_EVERY" value="&quot;30000&quot;"/>
     <elementParameter field="CHECK" name="BATCH_IMPORT" value="false"/>
     <elementParameter field="LABEL" name="BATCH_INFORMATION_1" value="Be careful with batch importer. For more informations refer&#xA;&#x9;&#x9;&#x9;&#x9;to documentation.&#xA;&#x9;&#x9;&#x9;"/>
@@ -224,18 +242,10 @@
     <elementParameter field="TEXT" name="ARRAYS_MAPPED_MEMORY" value="&quot;0M&quot;" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="Family" name="tNeo4jOutput_1">
-      <column comment="" key="false" length="8" name="_Name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="6" name="Gender" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="10" name="Age" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="13" name="Family_" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
+      <column comment="" key="false" length="8" name="_Name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="Gender" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Age" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="Family_" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
