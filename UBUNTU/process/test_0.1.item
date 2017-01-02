@@ -228,13 +228,13 @@
     <elementParameter field="PASSWORD" name="PASSWORD" value="" show="false"/>
     <elementParameter field="MEMO" name="QUERY" value="&quot;MERGE (family:Family { name:family })&#xD;&#xA;CREATE (person:Person { name:name, gender:gender, age:toInt(age)})&#xD;&#xA;CREATE (person)-[:From]->(family)&quot;"/>
     <elementParameter field="TABLE" name="PARAMETERS">
-      <elementValue elementRef="PARAMETER_NAME" value="&quot;name&quot;"/>
+      <elementValue elementRef="PARAMETER_NAME" value="name"/>
       <elementValue elementRef="PARAMETER_VALUE" value="_Name"/>
-      <elementValue elementRef="PARAMETER_NAME" value="&quot;gender&quot;"/>
+      <elementValue elementRef="PARAMETER_NAME" value="gender"/>
       <elementValue elementRef="PARAMETER_VALUE" value="Gender"/>
-      <elementValue elementRef="PARAMETER_NAME" value="&quot;age&quot;"/>
+      <elementValue elementRef="PARAMETER_NAME" value="age"/>
       <elementValue elementRef="PARAMETER_VALUE" value="Age"/>
-      <elementValue elementRef="PARAMETER_NAME" value="&quot;family&quot;"/>
+      <elementValue elementRef="PARAMETER_NAME" value="family"/>
       <elementValue elementRef="PARAMETER_VALUE" value="Family_"/>
     </elementParameter>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
