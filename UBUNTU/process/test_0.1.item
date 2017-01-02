@@ -226,7 +226,7 @@
     <elementParameter field="CHECK" name="SET_USERNAME" value="false" show="false"/>
     <elementParameter field="TEXT" name="USERNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="PASSWORD" name="PASSWORD" value="" show="false"/>
-    <elementParameter field="MEMO" name="QUERY" value="&quot;MERGE (family:Family { name:fami})&#xD;&#xA;CREATE (person:Person { name:name, gender:gender, age:toInt(age)})&#xD;&#xA;CREATE (person)-[:From]->(family)&quot;"/>
+    <elementParameter field="MEMO" name="QUERY" value="&quot;MERGE (family:Family { name:{fami}})&#xD;&#xA;CREATE (person:Person { name:{name}, gender:{gender}, age:toInt({age})})&#xD;&#xA;CREATE (person)-[:From]->(family)&quot;"/>
     <elementParameter field="TABLE" name="PARAMETERS">
       <elementValue elementRef="PARAMETER_NAME" value="&quot;name&quot;"/>
       <elementValue elementRef="PARAMETER_VALUE" value="_Name"/>
