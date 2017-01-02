@@ -119,29 +119,7 @@
     <elementParameter field="TEXT" name="LABEL" value="test"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tNeo4jRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="224">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tNeo4jRow_1" show="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tNeo4jConnection_1"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="NEO4J_2_3_X" show="false"/>
-    <elementParameter field="CHECK" name="REMOTE_SERVER" value="false" show="false"/>
-    <elementParameter field="DIRECTORY" name="DATABASE_PATH" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="SERVER_URL" value="&quot;http://localhost:7474/db/data&quot;" show="false"/>
-    <elementParameter field="CHECK" name="SHUTDOWN_DB" value="false"/>
-    <elementParameter field="CHECK" name="SET_USERNAME" value="false" show="false"/>
-    <elementParameter field="TEXT" name="USERNAME" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="" show="false"/>
-    <elementParameter field="MEMO" name="QUERY" value="&quot;CREATE INDEX ON :Family(name)&quot;"/>
-    <elementParameter field="TABLE" name="PARAMETERS"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-    <elementParameter field="TEXT" name="COMMIT_EVERY" value="&quot;30000&quot;"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tNeo4jRow_1"/>
-    <metadata connector="REJECT" name="REJECT">
-      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="224">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_7_7RYND4Eeaz4JcVhkQTuw" show="false"/>
@@ -214,7 +192,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tNeo4jOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="320">
+  <node componentName="tNeo4jOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tNeo4jOutput_1" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tNeo4jConnection_1"/>
@@ -266,47 +244,7 @@
       <column comment="" key="false" length="13" name="Family_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tNeo4jRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="224">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tNeo4jRow_2" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tNeo4jConnection_1"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="NEO4J_2_3_X" show="false"/>
-    <elementParameter field="CHECK" name="REMOTE_SERVER" value="false" show="false"/>
-    <elementParameter field="DIRECTORY" name="DATABASE_PATH" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="SERVER_URL" value="&quot;http://localhost:7474/db/data&quot;" show="false"/>
-    <elementParameter field="CHECK" name="SHUTDOWN_DB" value="false"/>
-    <elementParameter field="CHECK" name="SET_USERNAME" value="false" show="false"/>
-    <elementParameter field="TEXT" name="USERNAME" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="" show="false"/>
-    <elementParameter field="MEMO" name="QUERY" value="&quot;MERGE (family:Family { name:{fami}})&#xD;&#xA;CREATE (person:Person { name:{name}, gender:{gender}, age:toInt({age})})&#xD;&#xA;CREATE (person)-[:From]->(family)&quot;"/>
-    <elementParameter field="TABLE" name="PARAMETERS">
-      <elementValue elementRef="PARAMETER_NAME" value="&quot;name&quot;"/>
-      <elementValue elementRef="PARAMETER_VALUE" value=""/>
-      <elementValue elementRef="PARAMETER_NAME" value="&quot;gender&quot;"/>
-      <elementValue elementRef="PARAMETER_VALUE" value=""/>
-      <elementValue elementRef="PARAMETER_NAME" value="&quot;age&quot;"/>
-      <elementValue elementRef="PARAMETER_VALUE" value=""/>
-      <elementValue elementRef="PARAMETER_NAME" value="&quot;fami&quot;"/>
-      <elementValue elementRef="PARAMETER_VALUE" value=""/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-    <elementParameter field="TEXT" name="COMMIT_EVERY" value="&quot;30000&quot;"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="metadata" name="tNeo4jRow_2">
-      <column comment="" key="false" length="8" name="_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="Gender" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="Age" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="13" name="Family_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="REJECT" name="REJECT">
-      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tNeo4jConnection_1" offsetLabelX="0" offsetLabelY="0" source="tNeo4jConnection_1" target="tNeo4jRow_1">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tNeo4jRow_1" offsetLabelX="0" offsetLabelY="0" source="tNeo4jRow_1" target="tFileInputDelimited_1">
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tNeo4jConnection_1" offsetLabelX="0" offsetLabelY="0" source="tNeo4jConnection_1" target="tFileInputDelimited_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tNeo4jOutput_1">
@@ -319,17 +257,7 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tNeo4jRow_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tNeo4jRow_2" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
