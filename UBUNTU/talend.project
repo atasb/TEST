@@ -55,6 +55,7 @@
       <relatedItems xmi:id="_7j30MNHMEeaPrvHZ2sIhww" id="_o1IdINHMEeaPrvHZ2sIhww" version="Latest" type="context"/>
       <relatedItems xmi:id="_VVjNENHOEeanceojAp3XJQ" id="_7_7RYND4Eeaz4JcVhkQTuw" version="Latest" type="property"/>
       <relatedItems xmi:id="_VVjNEdHOEeanceojAp3XJQ" id="_7_7RYND4Eeaz4JcVhkQTuw - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_mPtLoNHPEeanceojAp3XJQ" id="_NwRoUNHPEeanceojAp3XJQ" version="Latest" type="property"/>
     </ItemsRelations>
     <migrationTask xmi:id="_QK0DkM1aEeaRSo1VbpxJ0g" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_QK0Dkc1aEeaRSo1VbpxJ0g" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
