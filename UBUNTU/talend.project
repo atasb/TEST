@@ -7,6 +7,8 @@
     <documentationStatus xmi:id="_QNaEkM1aEeaRSo1VbpxJ0g" label="unchecked" code="UCK"/>
     <documentationStatus xmi:id="_QNaEkc1aEeaRSo1VbpxJ0g" label="checked" code="CHK"/>
     <documentationStatus xmi:id="_QNaEks1aEeaRSo1VbpxJ0g" label="validated" code="VAL"/>
+    <componentsSettings xmi:id="_JECT8NHVEeanceojAp3XJQ" name="DI|tHashInput" family="Technical"/>
+    <componentsSettings xmi:id="_JP-eMNHVEeanceojAp3XJQ" name="DI|tHashOutput" family="Technical"/>
     <ItemsRelations xmi:id="_jvWQIND9Eeaz4JcVhkQTuw">
       <baseItem xmi:id="_jvWQIdD9Eeaz4JcVhkQTuw" id="_ju0EoND9Eeaz4JcVhkQTuw" version="0.1" type="job"/>
       <relatedItems xmi:id="_jvWQItD9Eeaz4JcVhkQTuw" id="_7_7RYND4Eeaz4JcVhkQTuw" version="Latest" type="property"/>
