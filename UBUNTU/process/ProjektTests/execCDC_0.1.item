@@ -282,8 +282,8 @@
         <nodes name="newColumn13" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.14" xpath="row1/newColumn13"/>
         <nodes name="newColumn14" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.15" xpath="row1/newColumn14"/>
         <nodes name="newColumn15" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.16" xpath="row1/newColumn15"/>
-        <nodes name="TALEND_CDC_TYPE" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.17" xpath="row1/TALEND_CDC_TYPE"/>
-        <nodes name="TALEND_CDC_CREATION_DATE" type="id_Date" outgoingConnections="//@node.2/@nodeData/@connections.18" xpath="row1/TALEND_CDC_CREATION_DATE"/>
+        <nodes name="TALEND_CDC_TYPE" type="id_String" xpath="row1/TALEND_CDC_TYPE"/>
+        <nodes name="TALEND_CDC_CREATION_DATE" type="id_Date" xpath="row1/TALEND_CDC_CREATION_DATE"/>
       </inputTrees>
       <outputTrees activateCondensedTool="true" name="output" allInOne="true">
         <nodes name="message" expression="" type="id_Document" xpath="output/message" pattern="">
@@ -305,8 +305,6 @@
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="newColumn13" expression="row1.newColumn13" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.14" xpath="output.message:/root/newColumn13"/>
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="newColumn14" expression="row1.newColumn14" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.15" xpath="output.message:/root/newColumn14"/>
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="newColumn15" expression="row1.newColumn15" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.16" xpath="output.message:/root/newColumn15"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="TALEND_CDC_TYPE" expression="row1.TALEND_CDC_TYPE" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.17" xpath="output.message:/root/TALEND_CDC_TYPE"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="TALEND_CDC_CREATION_DATE" expression="row1.TALEND_CDC_CREATION_DATE" type="id_Date" incomingConnections="//@node.2/@nodeData/@connections.18" xpath="output.message:/root/TALEND_CDC_CREATION_DATE"/>
           </children>
         </nodes>
       </outputTrees>
@@ -328,8 +326,6 @@
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.14" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.14"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.15" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.15"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.16" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.16"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.17" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.17"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.18" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.18"/>
     </nodeData>
   </node>
   <node componentName="tMomOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="192">
