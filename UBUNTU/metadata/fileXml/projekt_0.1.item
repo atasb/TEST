@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:XmlFileConnection xmi:id="_DhveINHXEeanceojAp3XJQ" name="projekt" dataPackage="_DhwFPtHXEeanceojAp3XJQ" XmlFilePath="C:/Users/batas/Desktop/xml.xml" Encoding="ISO-8859-15" fileContent="3C3F786D6C2076657273696F6E3D22312E302220656E636F64696E673D2249534F2D383835392D3135223F3E0A3C726F6F743E0A20203C69643E31313932313C2F69643E0A20203C6E6577436F6C756D6E3E3432714166316D3538554731726F306B777859493C2F6E6577436F6C756D6E3E0A20203C6E6577436F6C756D6E313E7941524C37703C2F6E6577436F6C756D6E313E0A20203C6E6577436F6C756D6E323E4F477A496A47463538694636726E6D7A354541543C2F6E6577436F6C756D6E323E0A20203C6E6577436F6C756D6E333E5777386B387779596B56376B4E6B35544A3734713C2F6E6577436F6C756D6E333E0A20203C6E6577436F6C756D6E343E537353474438636234796D747178326F4F7247493C2F6E6577436F6C756D6E343E0A20203C6E6577436F6C756D6E353E684678487A7256505A336F4752577273683752793C2F6E6577436F6C756D6E353E0A20203C6E6577436F6C756D6E363E524C3232376D4A59597974374B4845427041457A3C2F6E6577436F6C756D6E363E0A20203C6E6577436F6C756D6E373E45426A626E6A396B4D316E6D4642635A69376B5A3C2F6E6577436F6C756D6E373E0A20203C6E6577436F6C756D6E383E33496472634F747579666E3069574879324274623C2F6E6577436F6C756D6E383E0A20203C6E6577436F6C756D6E393E36496C42336F77766966446D3442494C55434B573C2F6E6577436F6C756D6E393E0A20203C6E6577436F6C756D6E31303E67334635586B6E6C346F695850597A5139686D4B3C2F6E6577436F6C756D6E31303E0A20203C6E6577436F6C756D6E31313E6353503341356E364442687742587A43614A52443C2F6E6577436F6C756D6E31313E0A20203C6E6577436F6C756D6E31323E3472577776535667545657547A614A457951654D3C2F6E6577436F6C756D6E31323E0A20203C6E6577436F6C756D6E31333E3236716D41766131524B4841716D7A54556272433C2F6E6577436F6C756D6E31333E0A20203C6E6577436F6C756D6E31343E3279543551696D68724F734D48337154784F58523C2F6E6577436F6C756D6E31343E0A20203C6E6577436F6C756D6E31353E6D716131676B53785469624966663170447144423C2F6E6577436F6C756D6E31353E0A3C2F726F6F743E0A">
+    <schema xmi:id="_DhveIdHXEeanceojAp3XJQ" LimitBoucle="50" AbsoluteXPathQuery="/root">
+      <schemaTargets xmi:id="_DhveItHXEeanceojAp3XJQ" RelativeXPathQuery="id" TagName="id"/>
+      <schemaTargets xmi:id="_DhveI9HXEeanceojAp3XJQ" RelativeXPathQuery="newColumn" TagName="newColumn"/>
+      <schemaTargets xmi:id="_DhveJNHXEeanceojAp3XJQ" RelativeXPathQuery="newColumn1" TagName="newColumn1"/>
+      <schemaTargets xmi:id="_DhwFMNHXEeanceojAp3XJQ" RelativeXPathQuery="newColumn2" TagName="newColumn2"/>
+      <schemaTargets xmi:id="_DhwFMdHXEeanceojAp3XJQ" RelativeXPathQuery="newColumn3" TagName="newColumn3"/>
+      <schemaTargets xmi:id="_DhwFMtHXEeanceojAp3XJQ" RelativeXPathQuery="newColumn4" TagName="newColumn4"/>
+      <schemaTargets xmi:id="_DhwFM9HXEeanceojAp3XJQ" RelativeXPathQuery="newColumn5" TagName="newColumn5"/>
+      <schemaTargets xmi:id="_DhwFNNHXEeanceojAp3XJQ" RelativeXPathQuery="newColumn6" TagName="newColumn6"/>
+      <schemaTargets xmi:id="_DhwFNdHXEeanceojAp3XJQ" RelativeXPathQuery="newColumn7" TagName="newColumn7"/>
+      <schemaTargets xmi:id="_DhwFNtHXEeanceojAp3XJQ" RelativeXPathQuery="newColumn8" TagName="newColumn8"/>
+      <schemaTargets xmi:id="_DhwFN9HXEeanceojAp3XJQ" RelativeXPathQuery="newColumn9" TagName="newColumn9"/>
+      <schemaTargets xmi:id="_DhwFONHXEeanceojAp3XJQ" RelativeXPathQuery="newColumn10" TagName="newColumn10"/>
+      <schemaTargets xmi:id="_DhwFOdHXEeanceojAp3XJQ" RelativeXPathQuery="newColumn11" TagName="newColumn11"/>
+      <schemaTargets xmi:id="_DhwFOtHXEeanceojAp3XJQ" RelativeXPathQuery="newColumn12" TagName="newColumn12"/>
+      <schemaTargets xmi:id="_DhwFO9HXEeanceojAp3XJQ" RelativeXPathQuery="newColumn13" TagName="newColumn13"/>
+      <schemaTargets xmi:id="_DhwFPNHXEeanceojAp3XJQ" RelativeXPathQuery="newColumn14" TagName="newColumn14"/>
+      <schemaTargets xmi:id="_DhwFPdHXEeanceojAp3XJQ" RelativeXPathQuery="newColumn15" TagName="newColumn15"/>
+    </schema>
+  </TalendMetadata:XmlFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_DhwFPtHXEeanceojAp3XJQ" name="default" dataManager="_DhveINHXEeanceojAp3XJQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_DhwFP9HXEeanceojAp3XJQ" id="_2GahcNHWEeanceojAp3XJQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DhwFQNHXEeanceojAp3XJQ" label="id" length="5" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DhwFQdHXEeanceojAp3XJQ" label="newColumn" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DhwFQtHXEeanceojAp3XJQ" label="newColumn1" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DhwFQ9HXEeanceojAp3XJQ" label="newColumn2" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DhwFRNHXEeanceojAp3XJQ" label="newColumn3" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DhwFRdHXEeanceojAp3XJQ" label="newColumn4" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DhwFRtHXEeanceojAp3XJQ" label="newColumn5" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DhwFR9HXEeanceojAp3XJQ" label="newColumn6" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DhwFSNHXEeanceojAp3XJQ" label="newColumn7" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DhwFSdHXEeanceojAp3XJQ" label="newColumn8" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DhwFStHXEeanceojAp3XJQ" label="newColumn9" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DhwFS9HXEeanceojAp3XJQ" label="newColumn10" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DhwFTNHXEeanceojAp3XJQ" label="newColumn11" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DhwFTdHXEeanceojAp3XJQ" label="newColumn12" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DhwFTtHXEeanceojAp3XJQ" label="newColumn13" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DhwFT9HXEeanceojAp3XJQ" label="newColumn14" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DhwFUNHXEeanceojAp3XJQ" label="newColumn15" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
