@@ -4,7 +4,7 @@
     <contextParameter comment="" name="postgres_Schema" prompt="postgres_Schema?" promptNeeded="false" repositoryContextId="_o1IdINHMEeaPrvHZ2sIhww" type="id_String" value="public"/>
     <contextParameter comment="" name="postgres_Port" prompt="postgres_Port?" promptNeeded="false" repositoryContextId="_o1IdINHMEeaPrvHZ2sIhww" type="id_String" value="5432"/>
     <contextParameter comment="" name="postgres_Server" prompt="postgres_Server?" promptNeeded="false" repositoryContextId="_o1IdINHMEeaPrvHZ2sIhww" type="id_String" value="192.168.56.102"/>
-    <contextParameter comment="" name="postgres_Database" prompt="postgres_Database?" promptNeeded="false" repositoryContextId="_o1IdINHMEeaPrvHZ2sIhww" type="id_String" value="postgres"/>
+    <contextParameter comment="" name="postgres_Database" prompt="postgres_Database?" promptNeeded="false" repositoryContextId="_o1IdINHMEeaPrvHZ2sIhww" type="id_String" value="talend"/>
     <contextParameter comment="" name="postgres_Password" prompt="postgres_Password?" promptNeeded="false" repositoryContextId="_o1IdINHMEeaPrvHZ2sIhww" type="id_Password" value="CNlsM2hQx/yKsFREJf9l+Q=="/>
     <contextParameter comment="" name="postgres_Login" prompt="postgres_Login?" promptNeeded="false" repositoryContextId="_o1IdINHMEeaPrvHZ2sIhww" type="id_String" value="postgres"/>
   </context>
