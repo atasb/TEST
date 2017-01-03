@@ -287,8 +287,8 @@
       </inputTrees>
       <outputTrees activateCondensedTool="true" name="output" allInOne="true">
         <nodes name="message" expression="" type="id_Document" xpath="output/message" pattern="">
-          <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="output.message:/root" loop="true" main="true">
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="id" expression="row1.id" type="id_Integer" incomingConnections="//@node.2/@nodeData/@connections.0" xpath="output.message:/root/id"/>
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="output.message:/root" main="true">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="id" expression="row1.id" type="id_Integer" incomingConnections="//@node.2/@nodeData/@connections.0" xpath="output.message:/root/id" loop="true" main="true"/>
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="newColumn" expression="row1.newColumn" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.1" xpath="output.message:/root/newColumn"/>
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="newColumn1" expression="row1.newColumn1" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.2" xpath="output.message:/root/newColumn1"/>
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="newColumn2" expression="row1.newColumn2" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.3" xpath="output.message:/root/newColumn2"/>
