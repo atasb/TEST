@@ -57,6 +57,19 @@
       <relatedItems xmi:id="_VVjNEdHOEeanceojAp3XJQ" id="_7_7RYND4Eeaz4JcVhkQTuw - metadata" version="Latest" type="schema"/>
       <relatedItems xmi:id="_mPtLoNHPEeanceojAp3XJQ" id="_NwRoUNHPEeanceojAp3XJQ" version="Latest" type="property"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_raKMYNHREeanceojAp3XJQ">
+      <baseItem xmi:id="_raKMYdHREeanceojAp3XJQ" id="_6CSI0NHQEeanceojAp3XJQ" version="0.1" type="job"/>
+      <relatedItems xmi:id="_raKMYtHREeanceojAp3XJQ" id="_aTrpENHQEeanceojAp3XJQ" version="Latest" type="property"/>
+      <relatedItems xmi:id="_raKMY9HREeanceojAp3XJQ" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_raKMZNHREeanceojAp3XJQ" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_raKMZdHREeanceojAp3XJQ" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_raKMZtHREeanceojAp3XJQ" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_raKMZ9HREeanceojAp3XJQ" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_raKMaNHREeanceojAp3XJQ" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_raKMadHREeanceojAp3XJQ" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_raKMatHREeanceojAp3XJQ" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_raKMa9HREeanceojAp3XJQ" id="Mathematical" version="Latest" type="routine"/>
+    </ItemsRelations>
     <migrationTask xmi:id="_QK0DkM1aEeaRSo1VbpxJ0g" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_QK0Dkc1aEeaRSo1VbpxJ0g" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_QK0Dks1aEeaRSo1VbpxJ0g" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="ok"/>
