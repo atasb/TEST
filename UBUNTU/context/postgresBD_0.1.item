@@ -3,7 +3,7 @@
   <contextParameter xmi:id="_o1oMYdHMEeaPrvHZ2sIhww" comment="" name="postgres_Schema" prompt="postgres_Schema?" promptNeeded="false" type="id_String" value="public"/>
   <contextParameter xmi:id="_o1oMYtHMEeaPrvHZ2sIhww" comment="" name="postgres_Port" prompt="postgres_Port?" promptNeeded="false" type="id_String" value="5432"/>
   <contextParameter xmi:id="_o1oMY9HMEeaPrvHZ2sIhww" comment="" name="postgres_Server" prompt="postgres_Server?" promptNeeded="false" type="id_String" value="192.168.56.102"/>
-  <contextParameter xmi:id="_o1oMZNHMEeaPrvHZ2sIhww" comment="" name="postgres_Database" prompt="postgres_Database?" promptNeeded="false" type="id_String" value="talend"/>
+  <contextParameter xmi:id="_o1oMZNHMEeaPrvHZ2sIhww" comment="" name="postgres_Database" prompt="postgres_Database?" promptNeeded="false" type="id_String" value="postgres"/>
   <contextParameter xmi:id="_o1oMZdHMEeaPrvHZ2sIhww" comment="" name="postgres_Password" prompt="postgres_Password?" promptNeeded="false" type="id_Password" value="CNlsM2hQx/yKsFREJf9l+Q=="/>
   <contextParameter xmi:id="_o1oMZtHMEeaPrvHZ2sIhww" comment="" name="postgres_Login" prompt="postgres_Login?" promptNeeded="false" type="id_String" value="postgres"/>
 </talendfile:ContextType>
