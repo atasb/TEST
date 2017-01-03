@@ -159,7 +159,25 @@
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees name="row2" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
         <nodes name="body" expression="" type="id_Document" xpath="row2/body" pattern="">
-          <children name="root" type="id_String" xpath="row2.body:/root" loop="true" main="true"/>
+          <children name="root" type="id_String" xpath="row2.body:/root" loop="true" main="true">
+            <children name="id" type="id_Integer" xpath="row2.body:/root/id"/>
+            <children name="newColumn" type="id_String" xpath="row2.body:/root/newColumn"/>
+            <children name="newColumn1" type="id_String" xpath="row2.body:/root/newColumn1"/>
+            <children name="newColumn2" type="id_String" xpath="row2.body:/root/newColumn2"/>
+            <children name="newColumn3" type="id_String" xpath="row2.body:/root/newColumn3"/>
+            <children name="newColumn4" type="id_String" xpath="row2.body:/root/newColumn4"/>
+            <children name="newColumn5" type="id_String" xpath="row2.body:/root/newColumn5"/>
+            <children name="newColumn6" type="id_String" xpath="row2.body:/root/newColumn6"/>
+            <children name="newColumn7" type="id_String" xpath="row2.body:/root/newColumn7"/>
+            <children name="newColumn8" type="id_String" xpath="row2.body:/root/newColumn8"/>
+            <children name="newColumn9" type="id_String" xpath="row2.body:/root/newColumn9"/>
+            <children name="newColumn10" type="id_String" xpath="row2.body:/root/newColumn10"/>
+            <children name="newColumn11" type="id_String" xpath="row2.body:/root/newColumn11"/>
+            <children name="newColumn12" type="id_String" xpath="row2.body:/root/newColumn12"/>
+            <children name="newColumn13" type="id_String" xpath="row2.body:/root/newColumn13"/>
+            <children name="newColumn14" type="id_String" xpath="row2.body:/root/newColumn14"/>
+            <children name="newColumn15" type="id_String" xpath="row2.body:/root/newColumn15"/>
+          </children>
         </nodes>
       </inputTrees>
       <outputTrees name="output"/>
