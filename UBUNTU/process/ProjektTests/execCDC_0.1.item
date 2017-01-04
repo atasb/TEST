@@ -267,7 +267,7 @@
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
     <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="output" name="output">
+    <metadata connector="FLOW" label="out1" name="out1">
       <column comment="" key="false" length="-1" name="message" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
@@ -292,48 +292,49 @@
         <nodes name="TALEND_CDC_TYPE" type="id_String" xpath="row1/TALEND_CDC_TYPE"/>
         <nodes name="TALEND_CDC_CREATION_DATE" type="id_Date" xpath="row1/TALEND_CDC_CREATION_DATE"/>
       </inputTrees>
-      <outputTrees activateCondensedTool="true" name="output" allInOne="true" enableEmptyElement="false">
-        <nodes name="message" expression="" type="id_Document" xpath="output/message" pattern="">
-          <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="output.message:/root" main="true">
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="id" expression="row1.id" type="id_Integer" incomingConnections="//@node.2/@nodeData/@connections.0" xpath="output.message:/root/id" optional="true"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="newColumn" expression="row1.newColumn" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.1" xpath="output.message:/root/newColumn"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="newColumn1" expression="row1.newColumn1" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.2" xpath="output.message:/root/newColumn1"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="newColumn2" expression="row1.newColumn2" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.3" xpath="output.message:/root/newColumn2"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="newColumn3" expression="row1.newColumn3" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.4" xpath="output.message:/root/newColumn3"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="newColumn4" expression="row1.newColumn4" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.5" xpath="output.message:/root/newColumn4"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="newColumn5" expression="row1.newColumn5" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.6" xpath="output.message:/root/newColumn5"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="newColumn6" expression="row1.newColumn6" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.7" xpath="output.message:/root/newColumn6"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="newColumn7" expression="row1.newColumn7" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.8" xpath="output.message:/root/newColumn7"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="newColumn8" expression="row1.newColumn8" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.9" xpath="output.message:/root/newColumn8"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="newColumn9" expression="row1.newColumn9" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.10" xpath="output.message:/root/newColumn9"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="newColumn10" expression="row1.newColumn10" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.11" xpath="output.message:/root/newColumn10"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="newColumn11" expression="row1.newColumn11" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.12" xpath="output.message:/root/newColumn11"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="newColumn12" expression="row1.newColumn12" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.13" xpath="output.message:/root/newColumn12"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="newColumn13" expression="row1.newColumn13" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.14" xpath="output.message:/root/newColumn13"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="newColumn14" expression="row1.newColumn14" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.15" xpath="output.message:/root/newColumn14"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="newColumn15" expression="row1.newColumn15" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.16" xpath="output.message:/root/newColumn15"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="loob" type="id_String" xpath="output.message:/root/loob" loop="true" main="true"/>
+      <outputTrees name="out1">
+        <nodes name="message" expression="" type="id_Document" xpath="out1/message" pattern="">
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="out1.message:/root" main="true">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="loop" expression="" type="id_String" xpath="out1.message:/root/loop" loop="true" main="true">
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="id" expression="row1.id" type="id_Integer" incomingConnections="//@node.2/@nodeData/@connections.0" xpath="out1.message:/root/loop/id"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="newColumn" expression="row1.newColumn" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.1" xpath="out1.message:/root/loop/newColumn"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="newColumn1" expression="row1.newColumn1" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.2" xpath="out1.message:/root/loop/newColumn1"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="newColumn2" expression="row1.newColumn2" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.3" xpath="out1.message:/root/loop/newColumn2"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="newColumn3" expression="row1.newColumn3" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.4" xpath="out1.message:/root/loop/newColumn3"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="newColumn4" expression="row1.newColumn4" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.5" xpath="out1.message:/root/loop/newColumn4"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="newColumn5" expression="row1.newColumn5" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.6" xpath="out1.message:/root/loop/newColumn5"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="newColumn6" expression="row1.newColumn6" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.7" xpath="out1.message:/root/loop/newColumn6"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="newColumn7" expression="row1.newColumn7" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.8" xpath="out1.message:/root/loop/newColumn7"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="newColumn8" expression="row1.newColumn8" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.9" xpath="out1.message:/root/loop/newColumn8"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="newColumn9" expression="row1.newColumn9" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.10" xpath="out1.message:/root/loop/newColumn9"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="newColumn10" expression="row1.newColumn10" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.11" xpath="out1.message:/root/loop/newColumn10"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="newColumn11" expression="row1.newColumn11" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.12" xpath="out1.message:/root/loop/newColumn11"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="newColumn12" expression="row1.newColumn12" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.13" xpath="out1.message:/root/loop/newColumn12"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="newColumn13" expression="row1.newColumn13" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.14" xpath="out1.message:/root/loop/newColumn13"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="newColumn14" expression="row1.newColumn14" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.15" xpath="out1.message:/root/loop/newColumn14"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="newColumn15" expression="row1.newColumn15" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.16" xpath="out1.message:/root/loop/newColumn15"/>
+            </children>
           </children>
         </nodes>
       </outputTrees>
       <varTables name="Var" minimized="true"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.0" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.1" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.2" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.3" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.4" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.5" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.5"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.6" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.6"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.7" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.7"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.8" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.8"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.9" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.9"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.10" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.10"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.11" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.11"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.12" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.12"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.13" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.13"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.14" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.14"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.15" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.15"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.16" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.16"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.0" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.1" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.2" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.3" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.4" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.4"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.5" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.5"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.6" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.6"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.7" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.7"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.8" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.8"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.9" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.9"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.10" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.10"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.11" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.11"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.12" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.12"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.13" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.13"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.14" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.14"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.15" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.15"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.16" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.16"/>
     </nodeData>
   </node>
   <node componentName="tMomOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="192">
@@ -424,9 +425,9 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tPostgresqlCDC_1" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlCDC_1" target="tMomCommit_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="output" lineStyle="0" metaname="output" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tMomOutput_1">
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tMomOutput_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="output" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tPostgresqlConnection_1" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlConnection_1" target="tPostgresqlCDC_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
