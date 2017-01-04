@@ -292,7 +292,7 @@
         <nodes name="TALEND_CDC_TYPE" type="id_String" xpath="row1/TALEND_CDC_TYPE"/>
         <nodes name="TALEND_CDC_CREATION_DATE" type="id_Date" xpath="row1/TALEND_CDC_CREATION_DATE"/>
       </inputTrees>
-      <outputTrees name="out1">
+      <outputTrees activateCondensedTool="true" name="out1" allInOne="true">
         <nodes name="message" expression="" type="id_Document" xpath="out1/message" pattern="">
           <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="out1.message:/root" main="true">
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="loop" expression="" type="id_String" xpath="out1.message:/root/loop" loop="true" main="true">
