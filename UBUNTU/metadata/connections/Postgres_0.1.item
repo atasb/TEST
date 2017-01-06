@@ -25,7 +25,7 @@
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_aNLykNQMEeawBPb_5C324w" name="postgres" dataManager="_aLJyQNQMEeawBPb_5C324w">
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_aNLykdQMEeawBPb_5C324w" name="public">
-      <ownedElement xsi:type="relational:TdTable" xmi:id="_vWNawNQMEeawBPb_5C324w" name="logTest" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_vWHUINQMEeawBPb_5C324w" label="logTest" tableType="TABLE">
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_vWNawNQMEeawBPb_5C324w" name="logTest" id="_vWHUINQMEeawBPb_5C324w" label="logTest" tableType="TABLE">
         <taggedValue xmi:id="_vWOB0NQMEeawBPb_5C324w" tag="Comment" value=""/>
         <feature xsi:type="relational:TdColumn" xmi:id="_vWOB0dQMEeawBPb_5C324w" name="newColumn" label="newColumn" length="2147483647" sourceType="VARCHAR" talendType="id_String" key="true" nullable="false">
           <taggedValue xmi:id="_vWOB0tQMEeawBPb_5C324w" tag="Comment" value=""/>
