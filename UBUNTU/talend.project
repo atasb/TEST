@@ -105,6 +105,8 @@
       <relatedItems xmi:id="_KT80ztQnEeawBPb_5C324w" id="DQTechnical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_KT80z9QnEeawBPb_5C324w" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_KT800NQnEeawBPb_5C324w" id="MDM" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_urmjQNQnEeawBPb_5C324w" id="_Z9SVYNQMEeawBPb_5C324w" version="Latest" type="context"/>
+      <relatedItems xmi:id="_urmjQdQnEeawBPb_5C324w" id="_P-9rENQMEeawBPb_5C324w" version="Latest" type="property"/>
     </ItemsRelations>
     <migrationTask xmi:id="_LgB8gNNaEeay4INXEJ-2ig" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_LgB8gdNaEeay4INXEJ-2ig" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
