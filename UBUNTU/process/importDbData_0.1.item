@@ -110,7 +110,7 @@
     <routinesParameter id="_LtE6ANNaEeay4INXEJ-2ig" name="TalendDate"/>
     <routinesParameter id="_LtIkYNNaEeay4INXEJ-2ig" name="TalendString"/>
   </parameters>
-  <node componentName="tRouteInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="160">
+  <node componentName="tRouteInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRouteInput_1" show="false"/>
     <elementParameter field="TABLE" name="VALUES">
       <elementValue elementRef="SCHEMA_COLUMN" value="body"/>
@@ -121,12 +121,16 @@
       <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tRouteOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="160">
+  <node componentName="tRouteOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRouteOutput_1" show="false"/>
     <elementParameter field="TABLE" name="VALUES"/>
     <elementParameter field="LABEL" name="NOTICE" value="The &quot;Name&quot; with &quot;Body&quot; type will be ignored"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRouteOutput_1"/>
+  </node>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRouteInput_1" show="false"/>
@@ -137,5 +141,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRouteOutput_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
   </subjob>
 </talendfile:ProcessType>
