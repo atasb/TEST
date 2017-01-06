@@ -151,7 +151,7 @@
           </children>
         </nodes>
       </inputTrees>
-      <outputTrees name="output">
+      <outputTrees activateCondensedTool="true" name="output">
         <nodes name="newColumn" expression="[row1.body:/root/loop/newColumn]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.0" xpath="output/newColumn"/>
         <nodes name="newColumn1" expression="[row1.body:/root/loop/newColumn1]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.1" xpath="output/newColumn1"/>
         <nodes name="newColumn2" expression="[row1.body:/root/loop/newColumn2]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.2" xpath="output/newColumn2"/>
