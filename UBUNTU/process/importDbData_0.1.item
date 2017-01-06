@@ -142,8 +142,8 @@
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees name="row1" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
         <nodes name="body" expression="" type="id_Document" xpath="row1/body">
-          <children name="root" type="id_String" xpath="row1.body:/root" loop="true" main="true">
-            <children name="loop" type="id_String" xpath="row1.body:/root/loop">
+          <children name="root" type="id_String" xpath="row1.body:/root" main="true">
+            <children name="loop" type="id_String" xpath="row1.body:/root/loop" loop="true" main="true">
               <children name="newColumn" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.0" xpath="row1.body:/root/loop/newColumn"/>
               <children name="newColumn1" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.1" xpath="row1.body:/root/loop/newColumn1"/>
               <children name="newColumn2" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.2" xpath="row1.body:/root/loop/newColumn2"/>
