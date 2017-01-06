@@ -24,6 +24,7 @@
       <relatedItems xmi:id="_mJ1BftNhEeay4INXEJ-2ig" id="DQTechnical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_mJ1Bf9NhEeay4INXEJ-2ig" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_mJ1BgNNhEeay4INXEJ-2ig" id="MDM" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_EKNncNQIEeawBPb_5C324w" id="_Ws0g4NNhEeay4INXEJ-2ig" version="Latest" type="property"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_jCo1gNP6EeawBPb_5C324w">
       <baseItem xmi:id="_jCo1gdP6EeawBPb_5C324w" id="_cA8UYNP6EeawBPb_5C324w" version="0.1" type="job"/>
