@@ -191,8 +191,8 @@
       </inputTrees>
       <outputTrees activateCondensedTool="true" name="out1" allInOne="true">
         <nodes name="message" expression="" type="id_Document" xpath="out1/message" pattern="">
-          <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="out1.message:/root" loop="true" main="true">
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="loop" expression="" type="id_String" xpath="out1.message:/root/loop">
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="out1.message:/root" main="true">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="loop" expression="" type="id_String" xpath="out1.message:/root/loop" loop="true" main="true">
               <children xsi:type="TalendXMLMap:OutputTreeNode" name="newColumn" expression="row2.newColumn" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.0" xpath="out1.message:/root/loop/newColumn"/>
               <children xsi:type="TalendXMLMap:OutputTreeNode" name="newColumn1" expression="row2.newColumn1" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.2" xpath="out1.message:/root/loop/newColumn1"/>
               <children xsi:type="TalendXMLMap:OutputTreeNode" name="newColumn2" expression="row2.newColumn2" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.1" xpath="out1.message:/root/loop/newColumn2"/>
