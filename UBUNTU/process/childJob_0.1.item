@@ -296,10 +296,10 @@
     <elementParameter field="TEXT" name="CONNECTION_PARAM_FAILOVER" value="&quot;?randomize=false&quot;" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_PARAM_STATIC" value="&quot;?transport.maxReconnectDelay=5000&amp;transport.useExponentialBackOff=false&quot;" show="false"/>
     <elementParameter field="TABLE" name="SERVERS" show="false"/>
-    <elementParameter field="TEXT" name="SERVERADDRESS" value="&quot;192.168.56.102&quot;"/>
-    <elementParameter field="TEXT" name="SERVERPORT" value="&quot;61616&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;admin&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="XOWw2jdQq/4="/>
+    <elementParameter field="TEXT" name="SERVERADDRESS" value=""/>
+    <elementParameter field="TEXT" name="SERVERPORT" value=""/>
+    <elementParameter field="TEXT" name="USER" value=""/>
+    <elementParameter field="PASSWORD" name="PASS" value=""/>
     <elementParameter field="TEXT" name="CHANNEL" value="&quot;DC.SVRCONN&quot;" show="false"/>
     <elementParameter field="TEXT" name="QM" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="IS_TRANSACTED" value="false"/>
