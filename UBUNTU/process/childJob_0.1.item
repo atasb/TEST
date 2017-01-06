@@ -278,7 +278,7 @@
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="true"/>
-    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="&quot;postgresCon&quot;"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="postgresCon"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -304,7 +304,7 @@
     <elementParameter field="TEXT" name="QM" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="IS_TRANSACTED" value="false"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="true"/>
-    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="&quot;MQCon&quot;"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="MQCon"/>
     <elementParameter field="CLOSED_LIST" name="ACKNOWLEDGMENT_MODE" value="AUTO_ACKNOWLEDGE" show="false"/>
     <elementParameter field="TABLE" name="ADDITIONAL_OPTIONS" show="false"/>
     <elementParameter field="CHECK" name="SET_MQ_SSL_CIPHER" value="false" show="false"/>
