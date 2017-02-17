@@ -114,7 +114,7 @@
   </parameters>
   <node componentName="tREST" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tREST_1" show="false"/>
-    <elementParameter field="TEXT" name="URL" value="&quot;http://192.168.1.8:8080/oauth/token?username=admin&amp;password=admin&amp;grant_type=password&amp;scope=read%20write&amp;client_secret=my-secret-token-to-change-in-production&amp;client_id=realylastapp&quot;"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;http://10.0.3.147:8080/oauth/token?username=admin&amp;password=admin&amp;grant_type=password&amp;scope=read%20write&amp;client_secret=my-secret-token-to-change-in-production&amp;client_id=realylastapp&quot;"/>
     <elementParameter field="CLOSED_LIST" name="METHOD" value="POST"/>
     <elementParameter field="TABLE" name="HEADERS"/>
     <elementParameter field="MEMO" name="BODY" value="&quot;&quot;"/>
