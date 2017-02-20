@@ -1,2 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<softwaredeployment:TdSoftwareSystem xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:softwaredeployment="http://www.talend.org/cwm/foundation/softwaredeployment/2010" xmi:id="_j9GEINNhEeay4INXEJ-2ig" name="PostgreSQL" subtype="PostgreSQL" version="9.4.10"/>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:softwaredeployment="http://www.talend.org/cwm/foundation/softwaredeployment/2010">
+  <softwaredeployment:TdSoftwareSystem xmi:id="_j9GEINNhEeay4INXEJ-2ig" name="PostgreSQL" subtype="PostgreSQL" version="9.4.10"/>
+  <softwaredeployment:TdSoftwareSystem xmi:id="_l-loIPe7EeayfKIOHVINfw" name="MySQL" subtype="MySQL" version="5.5.5-10.1.21-MariaDB"/>
+</xmi:XMI>
