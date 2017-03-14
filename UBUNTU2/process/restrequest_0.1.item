@@ -109,9 +109,9 @@
     <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;http://localhost:8088/rest&quot;"/>
     <elementParameter field="TABLE" name="SCHEMAS">
       <elementValue elementRef="SCHEMA" value="out"/>
-      <elementValue elementRef="HTTP_VERB" value="GET"/>
+      <elementValue elementRef="HTTP_VERB" value="POST"/>
       <elementValue elementRef="URI_PATTERN" value="&quot;/&quot;"/>
-      <elementValue elementRef="CONSUMES" value="NONE"/>
+      <elementValue elementRef="CONSUMES" value="XML-JSON"/>
       <elementValue elementRef="PRODUCES" value="JSON"/>
       <elementValue elementRef="STREAMING" value="false"/>
     </elementParameter>
