@@ -149,7 +149,7 @@
       <elementValue elementRef="ATTRIBUTE" value="attri"/>
       <elementValue elementRef="ORDER" value="3"/>
       <elementValue elementRef="PATH" value="/rootTag/group/testint"/>
-      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="COLUMN" value="test_Integer"/>
       <elementValue elementRef="VALUE" value=""/>
       <elementValue elementRef="ATTRIBUTE" value="branch"/>
       <elementValue elementRef="ORDER" value="4"/>
@@ -159,7 +159,7 @@
       <elementValue elementRef="ATTRIBUTE" value="attri"/>
       <elementValue elementRef="ORDER" value="5"/>
       <elementValue elementRef="PATH" value="/rootTag/group/teststring"/>
-      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="COLUMN" value="test_String"/>
       <elementValue elementRef="VALUE" value=""/>
       <elementValue elementRef="ATTRIBUTE" value="branch"/>
       <elementValue elementRef="ORDER" value="6"/>
