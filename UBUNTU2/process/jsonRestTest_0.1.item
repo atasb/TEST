@@ -155,12 +155,15 @@
       <elementValue elementRef="ORDER" value="2"/>
       <elementValue elementRef="PATH" value="type"/>
       <elementValue elementRef="COLUMN" value=""/>
-      <elementValue elementRef="VALUE" value="array"/>
+      <elementValue elementRef="VALUE" value="string"/>
       <elementValue elementRef="ATTRIBUTE" value="attri"/>
       <elementValue elementRef="ORDER" value="3"/>
     </elementParameter>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="TABLE" name="GROUPBYS"/>
+    <elementParameter field="TABLE" name="GROUPBYS">
+      <elementValue elementRef="OUTPUT_COLUMN" value="test_Integer"/>
+      <elementValue elementRef="INPUT_COLUMN" value="test_Integer"/>
+    </elementParameter>
     <elementParameter field="CHECK" name="REMOVE_ROOT" value="true"/>
     <elementParameter field="CHECK" name="COMPACT_FORMAT" value="true" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
