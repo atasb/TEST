@@ -155,7 +155,7 @@
       <elementValue elementRef="ORDER" value="2"/>
       <elementValue elementRef="PATH" value="type"/>
       <elementValue elementRef="COLUMN" value=""/>
-      <elementValue elementRef="VALUE" value="String[]"/>
+      <elementValue elementRef="VALUE" value="List"/>
       <elementValue elementRef="ATTRIBUTE" value="attri"/>
       <elementValue elementRef="ORDER" value="3"/>
     </elementParameter>
