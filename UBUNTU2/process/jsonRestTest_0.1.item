@@ -142,7 +142,7 @@
       <elementValue elementRef="ORDER" value="4"/>
       <elementValue elementRef="PATH" value="type"/>
       <elementValue elementRef="COLUMN" value=""/>
-      <elementValue elementRef="VALUE" value="string"/>
+      <elementValue elementRef="VALUE" value="String"/>
       <elementValue elementRef="ATTRIBUTE" value="attri"/>
       <elementValue elementRef="ORDER" value="5"/>
     </elementParameter>
@@ -155,7 +155,7 @@
       <elementValue elementRef="ORDER" value="2"/>
       <elementValue elementRef="PATH" value="type"/>
       <elementValue elementRef="COLUMN" value=""/>
-      <elementValue elementRef="VALUE" value="string[]"/>
+      <elementValue elementRef="VALUE" value="String[]"/>
       <elementValue elementRef="ATTRIBUTE" value="attri"/>
       <elementValue elementRef="ORDER" value="3"/>
     </elementParameter>
