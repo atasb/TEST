@@ -157,10 +157,10 @@
       <elementValue elementRef="COLUMN" value=""/>
       <elementValue elementRef="VALUE" value="string"/>
       <elementValue elementRef="ATTRIBUTE" value="attri"/>
-      <elementValue elementRef="ORDER" value="3"/>
-      <elementValue elementRef="PATH" value="array"/>
+      <elementValue elementRef="ORDER" value="4"/>
+      <elementValue elementRef="PATH" value="type"/>
       <elementValue elementRef="COLUMN" value=""/>
-      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="VALUE" value="array"/>
       <elementValue elementRef="ATTRIBUTE" value="attri"/>
       <elementValue elementRef="ORDER" value="4"/>
     </elementParameter>
