@@ -185,8 +185,8 @@
       </inputTrees>
       <outputTrees activateCondensedTool="true" name="out1" allInOne="true">
         <nodes name="JSon" expression="" type="id_Document" xpath="out1/JSon" pattern="">
-          <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="out1.JSon:/root" loop="true" main="true">
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="testint" expression="row2.test_Integer" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.0" xpath="out1.JSon:/root/testint"/>
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="out1.JSon:/root" main="true">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="testint" expression="row2.test_Integer" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.0" xpath="out1.JSon:/root/testint" loop="true" main="true"/>
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="test_string" expression="row2.test_String" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.1" xpath="out1.JSon:/root/test_string"/>
           </children>
         </nodes>
